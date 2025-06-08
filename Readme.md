@@ -49,7 +49,7 @@ A Java-based calculator implementation that demonstrates object-oriented design 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/calculator.git
+git clone https://github.com/sid-pandya/Java_Calculator.git
 cd calculator
 ```
 
@@ -279,9 +279,7 @@ To add a new power operation (x^y) to the calculator, follow these steps:
    public enum OperationType implements Operation {
        // ... existing operations ...
 
-       /**
-        * Power operation (x^y)
-        */
+       // Power operation (x^y)
        POWER((num1, num2) -> {
            double base = num1.doubleValue();
            double exponent = num2.doubleValue();
@@ -319,6 +317,7 @@ To add a new power operation (x^y) to the calculator, follow these steps:
    ```
 
 4. **Add Unit Tests**
+
    ```java
    @Test
    void testPowerOperation() {
