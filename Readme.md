@@ -1,4 +1,4 @@
-# Extensible Calculator
+# Calculator
 
 A Java-based calculator implementation that demonstrates object-oriented design principles, with a focus on extensibility and maintainability.
 
@@ -15,7 +15,6 @@ A Java-based calculator implementation that demonstrates object-oriented design 
 - [Error Handling](#error-handling)
 - [Testing](#testing)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
 - [Assumptions and Design Decisions](#assumptions-and-design-decisions)
 - [Adding New Operations](#adding-new-operations)
 
@@ -49,7 +48,7 @@ A Java-based calculator implementation that demonstrates object-oriented design 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/calculator.git
+git clone https://github.com/sid-pandya/Java_Calculator.git
 cd calculator
 ```
 
@@ -335,28 +334,6 @@ To add a new power operation (x^y) to the calculator, follow these steps:
    }
    ```
 
-### Implementation Details
-
-1. **Operation Definition**
-
-   - The power operation is added to the `OperationType` enum
-   - Uses `Math.pow()` for the actual calculation
-   - Supports both "^" and "\*\*" as operation symbols
-   - Handles special cases like negative exponents
-
-2. **Error Handling**
-
-   - Checks for invalid operations (e.g., 0 to negative power)
-   - Maintains consistency with existing error handling patterns
-   - Provides clear error messages
-
-3. **Testing Considerations**
-   - Basic power operations (positive exponents)
-   - Edge cases (zero exponent, negative exponent)
-   - Error cases (invalid inputs)
-   - Large number handling
-   - Decimal number handling
-
 ### Usage Examples
 
 1. **Basic Power Operation**
@@ -384,36 +361,6 @@ To add a new power operation (x^y) to the calculator, follow these steps:
    The result is: 8
    ```
 
-### Best Practices
-
-1. **Operation Implementation**
-
-   - Keep the operation logic simple and focused
-   - Handle edge cases explicitly
-   - Use clear, descriptive names
-   - Document special cases
-
-2. **Error Handling**
-
-   - Create specific exceptions for operation-specific errors
-   - Provide clear error messages
-   - Handle all edge cases
-   - Maintain consistency with existing error handling
-
-3. **Testing**
-
-   - Test basic functionality
-   - Test edge cases
-   - Test error conditions
-   - Test with different number types
-   - Test in chained operations
-
-4. **Documentation**
-   - Document the operation's behavior
-   - Document special cases
-   - Update README with new operation
-   - Add usage examples
-
 ## Future Enhancements
 
 1. **Advanced Mathematical Operations**
@@ -433,7 +380,6 @@ To add a new power operation (x^y) to the calculator, follow these steps:
 
 3. **Memory and History Features**
 
-   - Memory registers (M+, M-, MR, MC)
    - Operation history tracking
    - Result history with timestamps
    - Export/import calculation history
